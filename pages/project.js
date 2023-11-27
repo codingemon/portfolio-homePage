@@ -42,7 +42,8 @@ export async function getServerSideProps() {
       authorization: `Bearer ${TOKEN}`,
     },
     body: JSON.stringify({
-      sorts: [{ property: "Name", direction: "ascending" }],
+      // 정렬기준
+      // sorts: [{ property: "Name", direction: "ascending" }],
       page_size: 100,
     }),
   };
