@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>코딩에몽 포트폴리오</title>
+        <title>최성형 포트폴리오</title>
         <meta name="description" content="가보자고" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
