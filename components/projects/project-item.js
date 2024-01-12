@@ -9,10 +9,6 @@ export default function ProjectItem({ data }) {
   const tags = data.properties.Tags.multi_select;
   const start = data.properties.WorkPeriod.date.start;
   const end = data.properties.WorkPeriod.date.end;
-  const notYoutube = () => {
-    if (youtube === null) {
-    }
-  };
 
   // 날짜 계산
   const calculatedPeriod = (start, end) => {
@@ -56,7 +52,11 @@ export default function ProjectItem({ data }) {
         <h1 className="text-2xl font-bold">{Title}</h1>
         <h3 className="mt-4 text-xl">{description}</h3>
         <a href={github}>Github 바로가기</a>
-        <a href={youtube}>Youtube 시연영상 보러가기</a>
+        {youtube && (
+          <a href={youtube} target="_blank" rel="noopener noreferrer">
+            Youtube 시연영상 보러가기
+          </a>
+        )}
         <p className="my-1">
           작업기간 : {start} ~ {end} ({calculatedPeriod(start, end)}일)
         </p>
