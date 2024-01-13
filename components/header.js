@@ -29,7 +29,7 @@ export default function Header() {
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             {/* legacyBehavior 넣어서 nextJs13 버전부터 a태그를 넣어줄 수 있음 */}
             <Link href="/" legacyBehavior>
-              <a className="mr-5 hover:text-gray-900">홈</a>
+              <a className="mr-5 hover:text-gray-900">HOME</a>
             </Link>
             <Link href="project" legacyBehavior>
               <a className="mr-5 hover:text-gray-900">프로젝트</a>
