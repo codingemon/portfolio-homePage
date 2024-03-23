@@ -2,9 +2,11 @@ import Layout from "@/components/layout";
 import Head from "next/head";
 import { TOKEN, DATABASE_ID } from "@/config";
 import ProjectItem from "../components/projects/project-item";
+import usePageTilte from "@/hooks/usePageTitle";
 
 export default function Project({ projects }) {
   console.log(projects);
+  usePageTilte("최성형 프로젝트 목록");
 
   return (
     <Layout>
@@ -13,7 +15,7 @@ export default function Project({ projects }) {
           <title>코딩에몽 포트폴리오</title>
           <meta name="description" content="가보자고" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
         </Head>
         <h1 className="text-4xl font-bold sm:text-6xl">
           총 프로젝트 :
